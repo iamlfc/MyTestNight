@@ -76,6 +76,7 @@ public class DayNightChang extends AppCompatActivity {
                 return;
             ((AnimationDrawable) drawable).start();
             sendEmptyMessageDelayed(KeyStore.KEY_TAG_ANIMATOR_STOP, 1760);
+
         }
 
         /**
