@@ -48,8 +48,10 @@ public class MainActivity extends AppCompatActivity {
         if (isNight) {
             // 日间模式
             str_note = "巴拉拉能量，呜呼啦呼，巴扎黑！暗！";
+            
         } else {
             // 夜间模式
+
             str_note = "巴拉拉能量，呜呼啦呼，巴扎黑！光！";
 
         }
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
+
         if (isNight) {
             // 日间模式
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
@@ -84,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
             PreferenceUtil.putBoolean(ConstantUtil.SWITCH_MODE_KEY, true);
 
         }
+
         recreate();
 //        btnDayNightSwitch.setText(str_note);
     }
@@ -92,7 +96,9 @@ public class MainActivity extends AppCompatActivity {
      * */
     private final String KEY_MARIO_CACHE_THEME_TAG = "MarioCache_themeTag";
 
+
     protected int getThemeTag() {
+
         SharedPreferences preferences = getSharedPreferences("MarioCache", Context.MODE_PRIVATE);
         return preferences.getInt(KEY_MARIO_CACHE_THEME_TAG, 1);
     }
