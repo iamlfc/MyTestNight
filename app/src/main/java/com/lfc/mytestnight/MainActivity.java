@@ -14,6 +14,12 @@ import android.widget.LinearLayout;
 import com.lfc.mytestnight.widget.ConstantUtil;
 import com.lfc.mytestnight.widget.PreferenceUtil;
 
+/*
+    ··1  style 文件  values 和 values-v21中的
+    ··2   colors.xml文件 和  values-v21文件夹
+    ··3   Application 类的 重写
+   * */
+
 public class MainActivity extends AppCompatActivity {
 
     private LinearLayout activityMain;
@@ -90,4 +96,5 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("MarioCache", Context.MODE_PRIVATE);
         return preferences.getInt(KEY_MARIO_CACHE_THEME_TAG, 1);
     }
+
 }
