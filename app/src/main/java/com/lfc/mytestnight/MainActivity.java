@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         if (isNight) {
             // 日间模式
             str_note = "巴拉拉能量，呜呼啦呼，巴扎黑！暗！";
-            
+
         } else {
             // 夜间模式
 
